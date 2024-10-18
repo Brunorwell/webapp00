@@ -20,3 +20,16 @@ st.write("Como já deve ter percebido, o método st.write() é usado para escrit
 
 values = st.slider("Select a range of values", 0.0, 100.0, (5.0, 15.0))
 st.write("Values:", values)
+
+##Graphic
+{
+  "width": 360,
+  "height": 240,
+  "mark": {"type": "bar", "tooltip": true},
+  "encoding": {
+    "x": {"field": "category", "type": "ordinal"},
+    "y": {"field": "sales", "type": "quantitative"},
+    "color": {"value": "#ff4b4b"}
+  },
+  "data": {"name": "table"}
+}
